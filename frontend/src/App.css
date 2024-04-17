@@ -1,0 +1,36 @@
+#page {
+  width: 100vw;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+#page p, h2 {
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+}
+
+.newCity {
+  margin-top: 1em;
+  width: 55vw;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.newCity > .flexCol {
+  align-items: center;
+}
+
+.newCity input {
+  width: 15vw;
+}
