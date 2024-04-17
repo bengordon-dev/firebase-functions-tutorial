@@ -33,3 +33,11 @@ The frontend React app was created with Vite (`npm create vite@latest <name> -- 
 Configure your project to include emulators in `firebase init`. The emulator makes testing your cloud function(s) significantly easier. You will at minimum need to emulate both the database and the functions; emulating hosting is probably a good idea too so you can play around with a frontend that can interact with the emulated services.
 
 Run `firebase emulators:start` to start the local emulator.
+
+## Other Notes
+
+To deploy your functions, run `firebase deploy --only functions`. 
+
+To deploy your frontend, run `npm run build` and then `firebase deploy --only hosting`. Make sure the "public" field of "hosting" in [frontend/firebase.json](frontend/firebase.json) is set to the directory where the output of `npm run build` goes to (in this repo it is not)
+
+Billing is required in your Firebase project for Functions to work.
